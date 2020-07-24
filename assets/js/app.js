@@ -1,3 +1,9 @@
+// AOS Animation
+AOS.init({
+    duration: 1000,// values from 0to 3000, with step 50ms
+});
+
+
 // Navbar button hide and show
 
 let navOpen = document.querySelector('.navbar-open');
@@ -16,9 +22,3 @@ function toggleBtn() {
 
 
 navOpen.addEventListener('click', toggleBtn);
-
-
-// AOS Animation
-AOS.init({
-    duration: 1000,// values from 0to 3000, with step 50ms
-});
