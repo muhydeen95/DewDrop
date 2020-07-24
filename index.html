@@ -20,10 +20,10 @@
     <!--Custom CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <title>DewDrop!</title>
+    <title>DewDrop</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img class="pb-2 pr-2" width="20%" src="./assets/images/logo.png" alt="logo">
@@ -59,23 +59,23 @@
 
     <div class="jumbotron my-0">
         <div class="container">
-           <div class="jumbo-content">
-            <div class="content my-5 pt-5 pb-0">
-                <h3 class="mb-0 pb-0">Your</h3>
-                <h1 class="mt-0 pt-0 d-inline">Brand</h1>
-                <h3 class="d-inline">Story.</h3>
-           </div data-aos="fade-down" data-aos-duration="1000">
+            <div class="jumbo-content">
+                <div class="content my-5 pt-5 pb-0">
+                    <h3 class="mb-0 pb-0">Your</h3>
+                    <h1 class="mt-0 pt-0 d-inline">Brand</h1>
+                    <h3 class="d-inline">Story.</h3>
+                </div>
                 <img width="20%" class="jumbo-cam d-none d-md-block" src="./assets/images/camera 1.png" alt="">
-           </div>
-           
-        </div>
-        <div id="rain-drop">
-            <div class="rain y1"></div>
-            <div class="rain y2"></div>
-            <div class="rain y3"></div>
-            <div class="rain y4"></div>
-            <div class="rain y5"></div>
-            <div class="rain y6"></div>
+            </div>
+            
+            <div id="rain-drop">
+                <div class="rain y1"></div>
+                <div class="rain y2"></div>
+                <div class="rain y3"></div>
+                <div class="rain y4"></div>
+                <div class="rain y5"></div>
+                <div class="rain y6"></div>
+            </div>
         </div>
     </div>
 
@@ -98,11 +98,11 @@
             <div class="container">
                 <div class="py-5">
                     <div class="">
-                        <h2 class="display-3">WHAT <br> WE DO</h2>
+                        <h2 class="pl-3">WHAT <br> WE DO</h2>
                     </div>
                    <div class="row my-5 pt-3 pb-5" >
-                       <div class="col-md-6 col-lg-3 mx-auto">
-                           <div class="icon-wrapper">
+                       <div class="col-md-6 col-lg-3 pl-5">
+                           <div data-aos="fade-down" data-aos-duration="1000" class="icon-wrapper">
                                 <img class="outer" src="./assets/images/Ellipse-outer.png" alt="">
                                 <img class="middle" src="./assets/images/Ellipse-middle.png" alt="">
                                 <img class="inner" src="./assets/images/Ellipse-inner.png" alt="">
@@ -110,8 +110,8 @@
                            <p class="py-1 mb-0">01</p>
                            <p class="">Design a product</p>
                        </div>
-                       <div class="col-md-6 col-lg-3">
-                        <div class="icon-wrapper">
+                       <div class="col-md-6 col-lg-3 pl-5">
+                        <div data-aos="fade-up" data-aos-duration="1000" class="icon-wrapper">
                             <img src="./assets/images/outer.png" alt="" class="outer1">
                             <img src="./assets/images/middle.png" alt="" class="middle1">
                             <img src="./assets/images/inner.png" alt="" class="inner1">
@@ -119,8 +119,8 @@
                         <p class="py-1 mb-0">02</p>
                         <p>Improve an <br> existing product</p>
                        </div>
-                       <div class="col-md-6 col-lg-3">
-                        <div class="icon-wrapper">
+                       <div class="col-md-6 col-lg-3 pl-5">
+                        <div data-aos="fade-in-left" data-aos-duration="1000" class="icon-wrapper">
                             <img src="./assets/images/Rectangle-inner.png" alt="" class="rect-inner">
                             <img src="./assets/images/Rectangle-middle.png" alt="" class="rect-middle">
                             <img src="./assets/images/Rectangle-outer.png" alt="" class="rect-outer">
@@ -128,8 +128,8 @@
                         <p class="py-1 mb-0">03</p>
                         <p>Launch a new company</p>
                        </div>
-                       <div class="col-md-6 col-lg-3">
-                        <div class="icon-wrapper">
+                       <div class="col-md-6 col-lg-3 pl-5">
+                        <div data-aos="fade-in-right" data-aos-duration="1000" class="icon-wrapper">
                             <img src="./assets/images/sqaure.png" alt="" class="square">
                             <img src="./assets/images/circle-1.png" alt="" class="square-middle">
                             <img src="./assets/images/circle-2.png" alt="" class="square-outer">
@@ -183,59 +183,214 @@
             </div>
         </section>
 
+
         <section id="review" class="py-5">
             <div class="container py-5">
                 <h2 class="font-weight-bold pb-4 pl-4">CLIENT <br> REVIEWS</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card mx-auto">
-                            <div class="card-body px-1 text-center">
-                              <h5 class="card-title pt-5"><img src="./assets/images/quote.png" alt=""></h5>
-                              <p class="card-text px-2 py-3">
-                                The best creative company i have ever worked with, love and cherish their style of work and our they give life to 
-                                lifeless things      
-                              </p>
-                              <div class="py-3">
-                                  <img src="./assets/images/client.png" alt="">
-                                  <h5 class="pb-0 pt-2 mb-0">Anna Joe</h5>
-                                  <p class="">CEO, Interswitch</p>
+                 <!--Carousel Wrapper-->
+                 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                    <!--Controls-->
+                    <div class="controls-top">
+                    <a class="btn-floating" href="#multi-item-example" data-slide="prev">
+                        <i style="color: aqua;" class="fas fa-chevron-left"></i></a>
+                    <a class="btn-floating" href="#multi-item-example" data-slide="next">
+                        <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <!--/.Controls-->
+                
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#multi-item-example" data-slide-to="1"></li>
+                        <li data-target="#multi-item-example" data-slide-to="2"></li>
+                    </ol>
+                    <!--/.Indicators-->
+  
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                
+                    <!--First slide-->
+                    <div class="carousel-item active">
+                
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mx-auto">
+                                    <div class="card-body px-1 text-center">
+                                    <h5 class="card-title pt-5"><img src="./assets/images/quote.png" alt=""></h5>
+                                    <p class="card-text px-2 py-3">
+                                        The best creative company i have ever worked with, love and cherish their style of work and our they give life to 
+                                        lifeless things      
+                                    </p>
+                                    <div class="py-3">
+                                        <img src="./assets/images/client.png" alt="">
+                                        <h5 class="pb-0 pt-2 mb-0">Anna Joe</h5>
+                                        <p class="">CEO, Interswitch</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mx-auto">
-                            <div class="card-body px-1 text-center">
-                              <h5 class="card-title pt-5"><img src="./assets/images/quote.png" alt=""></h5>
-                              <p class="card-text px-2 py-3">
-                                The best creative company i have ever worked with, love and cherish their style of work and our they give life to 
-                                lifeless things      
-                              </p>
-                              <div class="py-3">
-                                  <img src="./assets/images/client.png" alt="">
-                                  <h5 class="pb-0 pt-2 mb-0">Anna Joe</h5>
-                                  <p class="">CEO, Interswitch</p>
+                        
+                            <div class="col-md-4">
+                                <div class="card mx-auto">
+                                    <div class="card-body px-1 text-center">
+                                    <h5 class="card-title pt-5"><img src="./assets/images/quote.png" alt=""></h5>
+                                    <p class="card-text px-2 py-3">
+                                        The best creative company i have ever worked with, love and cherish their style of work and our they give life to 
+                                        lifeless things      
+                                    </p>
+                                    <div class="py-3">
+                                        <img src="./assets/images/client.png" alt="">
+                                        <h5 class="pb-0 pt-2 mb-0">Anna Joe</h5>
+                                        <p class="">CEO, Interswitch</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mx-auto">
-                            <div class="card-body px-1 text-center">
-                              <h5 class="card-title pt-5"><img src="./assets/images/quote.png" alt=""></h5>
-                              <p class="card-text px-2 py-3">
-                                The best creative company i have ever worked with, love and cherish their style of work and our they give life to 
-                                lifeless things      
-                              </p>
-                              <div class="py-3">
-                                  <img src="./assets/images/client.png" alt="">
-                                  <h5 class="pb-0 pt-2 mb-0">Anna Joe</h5>
-                                  <p class="">CEO, Interswitch</p>
+                        
+                            <div class="col-md-4">
+                                <div class="card mx-auto">
+                                    <div class="card-body px-1 text-center">
+                                    <h5 class="card-title pt-5"><img src="./assets/images/quote.png" alt=""></h5>
+                                    <p class="card-text px-2 py-3">
+                                        The best creative company i have ever worked with, love and cherish their style of work and our they give life to 
+                                        lifeless things      
+                                    </p>
+                                    <div class="py-3">
+                                        <img src="./assets/images/client.png" alt="">
+                                        <h5 class="pb-0 pt-2 mb-0">Anna Joe</h5>
+                                        <p class="">CEO, Interswitch</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
+                        </div>
+                
                     </div>
+                    <!--/.First slide-->
+                
+                    <!--Second slide-->
+                    <div class="carousel-item">
+                
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mx-auto">
+                                    <div class="card-body px-1 text-center">
+                                    <h5 class="card-title pt-5"><img src="./assets/images/quote.png" alt=""></h5>
+                                    <p class="card-text px-2 py-3">
+                                        The best creative company i have ever worked with, love and cherish their style of work and our they give life to 
+                                        lifeless things      
+                                    </p>
+                                    <div class="py-3">
+                                        <img src="./assets/images/client.png" alt="">
+                                        <h5 class="pb-0 pt-2 mb-0">Anna Joe</h5>
+                                        <p class="">CEO, Interswitch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-4">
+                                <div class="card mx-auto">
+                                    <div class="card-body px-1 text-center">
+                                    <h5 class="card-title pt-5"><img src="./assets/images/quote.png" alt=""></h5>
+                                    <p class="card-text px-2 py-3">
+                                        The best creative company i have ever worked with, love and cherish their style of work and our they give life to 
+                                        lifeless things      
+                                    </p>
+                                    <div class="py-3">
+                                        <img src="./assets/images/client.png" alt="">
+                                        <h5 class="pb-0 pt-2 mb-0">Anna Joe</h5>
+                                        <p class="">CEO, Interswitch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-4">
+                                <div class="card mx-auto">
+                                    <div class="card-body px-1 text-center">
+                                    <h5 class="card-title pt-5"><img src="./assets/images/quote.png" alt=""></h5>
+                                    <p class="card-text px-2 py-3">
+                                        The best creative company i have ever worked with, love and cherish their style of work and our they give life to 
+                                        lifeless things      
+                                    </p>
+                                    <div class="py-3">
+                                        <img src="./assets/images/client.png" alt="">
+                                        <h5 class="pb-0 pt-2 mb-0">Anna Joe</h5>
+                                        <p class="">CEO, Interswitch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <!--/.Second slide-->
+                
+                    <!--Third slide-->
+                    <div class="carousel-item">
+                
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mx-auto">
+                                    <div class="card-body px-1 text-center">
+                                    <h5 class="card-title pt-5"><img src="./assets/images/quote.png" alt=""></h5>
+                                    <p class="card-text px-2 py-3">
+                                        The best creative company i have ever worked with, love and cherish their style of work and our they give life to 
+                                        lifeless things      
+                                    </p>
+                                    <div class="py-3">
+                                        <img src="./assets/images/client.png" alt="">
+                                        <h5 class="pb-0 pt-2 mb-0">Anna Joe</h5>
+                                        <p class="">CEO, Interswitch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-4">
+                                <div class="card mx-auto">
+                                    <div class="card-body px-1 text-center">
+                                    <h5 class="card-title pt-5"><img src="./assets/images/quote.png" alt=""></h5>
+                                    <p class="card-text px-2 py-3">
+                                        The best creative company i have ever worked with, love and cherish their style of work and our they give life to 
+                                        lifeless things      
+                                    </p>
+                                    <div class="py-3">
+                                        <img src="./assets/images/client.png" alt="">
+                                        <h5 class="pb-0 pt-2 mb-0">Anna Joe</h5>
+                                        <p class="">CEO, Interswitch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mx-auto">
+                                    <div class="card-body px-1 text-center">
+                                    <h5 class="card-title pt-5"><img src="./assets/images/quote.png" alt=""></h5>
+                                    <p class="card-text px-2 py-3">
+                                        The best creative company i have ever worked with, love and cherish their style of work and our they give life to 
+                                        lifeless things      
+                                    </p>
+                                    <div class="py-3">
+                                        <img src="./assets/images/client.png" alt="">
+                                        <h5 class="pb-0 pt-2 mb-0">Anna Joe</h5>
+                                        <p class="">CEO, Interswitch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <!--/.Third slide-->
+                
+                    </div>
+                    <!--/.Slides-->
+                
                 </div>
+                <!--/.Carousel Wrapper-->
             </div>
         </section>
 

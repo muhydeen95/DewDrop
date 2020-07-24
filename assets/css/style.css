@@ -38,6 +38,10 @@ nav {
     margin: 0;
 }
 
+.navbar-nav {
+    transition: 0.5s;
+}
+
 
 /* Jumbotron */
 .jumbotron {
@@ -70,7 +74,7 @@ nav {
 .jumbo-cam {
      position: absolute;
      right: 200px;
-     bottom: 100px;
+     bottom: 50px;
      z-index: -1;
      overflow: hidden;
 }
