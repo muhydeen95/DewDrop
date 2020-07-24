@@ -1,10 +1,10 @@
 :root {
     --mainBlack: #010101;
     --mainWhite: #ffffff;
-    --colorGrey: ;
-    --colorGOld: ;
-    --colorClay: ;
-    --DeepGreen: ;
+    --colorGrey: rgba(210, 207, 206, 0.59);
+    --colorGold: rgba(251, 228, 136, 0.56);
+    --colorClay: rgba(110, 90, 89, 0.51);
+    --DeepGreen: rgba(11, 77, 93, 0.38);
 }
 
 *, body {
@@ -33,7 +33,7 @@ p {
 }
 
 nav {
-    background: #010101;
+    background: var(--mainBlack);
     width: 100%;
     margin: 0;
 }
@@ -41,8 +41,8 @@ nav {
 
 /* Jumbotron */
 .jumbotron {
-    background: #010101;
-    color: #ffffff;
+    background: var(--mainBlack);
+    color: var(--mainWhite);
     position: relative;
     z-index: -5;
     overflow: hidden;
@@ -54,9 +54,9 @@ nav {
 
 .jumbotron h1 {
     color: black;
-    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: var(--mainBlack); /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: var(--mainWhite);
     font-size: 16.5rem;
     font-family: Avenir;
 }
@@ -116,7 +116,7 @@ nav {
 /* Profile */
 #profile {
     background: url('../images/profile-bg.png') center/cover no-repeat;
-    color: #ffffff;
+    color: var(--mainWhite);
 }
 
 #profile h2 {
@@ -132,7 +132,7 @@ nav {
 /*service */
 #service {
     background: url('../images/service-bg.png') center/cover no-repeat;
-    color: #ffffff;
+    color: var(--mainWhite);
 }
 
 #service h2{
@@ -216,8 +216,8 @@ nav {
 
 /* project */
 #project {
-    background: #010101;
-    color: #ffffff;
+    background: var(--mainBlack);
+    color: var(--mainWhite);
 }
 
 #project h2 {
@@ -231,25 +231,25 @@ nav {
 }
 
 .grey {
-    background: rgba(210, 207, 206, 0.59);
+    background: var(--colorGrey);
 }
 
 .gold {
-    background: rgba(251, 228, 136, 0.56);
+    background: var(--colorGold);
 }
 
 .clay {
-    background: rgba(110, 90, 89, 0.51);
+    background: var(--colorClay);
 }
 
 .purple {
-    background: rgba(11, 77, 93, 0.38)
+    background: var(--DeepGreen);
 }
 
 /* review */
 #review {
-    background: #010101;
-    color: #ffffff;
+    background: var(--mainBlack);
+    color: var(--mainWhite);
 }
 
 #review h2 {
@@ -257,8 +257,8 @@ nav {
 }
 
 .card {
-    color: #ffffff;
-    background: #010101;
+    color: var(--mainWhite);
+    background: var(--mainBlack);
     border: 1px solid rgba(255, 255, 255, 0.19);
     padding: 15px;
 }
@@ -275,38 +275,54 @@ nav {
 /* form-section */
 #form-section {
     background: url('../images/bg.png') center/cover no-repeat;
-    color: #ffffff;
+    color: var(--mainWhite);
+}
+
+#form-section h2 {
+    font-size: 2.7rem;
+}
+
+#form-section p {
+    font-size: 1em;
 }
 
 .form-control {
     background: transparent;
-    border-bottom: 3px solid #FFFFFF;
+    border-bottom: 3px solid var(--mainWhite);
     border-top: none;
     border-left: none;
     border-right: none;
     padding-left: 0;
 }
 
+.form-control:focus {
+    background: transparent;
+    border-bottom: 3px solid var(--mainWhite);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
 .btn-primary {
-    background: #ffffff;
-    color: #001100;
+    background: var(--mainWhite);
+    color: var(--mainBlack);
     border: none;
     border-radius: none;
 }
 
 .btn-primary:hover {
-    background: #ffffff;
-    color: #001100;
+    background: var(--mainWhite);
+    color: var(--mainBlack);
 }
 
 /* footer */
 footer {
-    background: #010101;
-    color: #ffffff;
+    background: var(--mainBlack);
+    color: var(--mainWhite);
 }
 
 .fab, .fas {
-    color: #ffffff;
+    color: var(--mainWhite);
 }
 
 /* MEDIA QUERY */
@@ -400,6 +416,14 @@ footer {
 
     .card-body p {
         font-size: .8rem;
+    }
+
+    #form-section h2 {
+        font-size: 1.7rem;
+    }
+    
+    #form-section p {
+        font-size: 1em;
     }
 
     footer p {
