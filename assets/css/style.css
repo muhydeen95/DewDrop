@@ -38,10 +38,6 @@ nav {
     margin: 0;
 }
 
-.navbar-nav {
-    transition: 0.5s;
-}
-
 
 /* Jumbotron */
 .jumbotron {
@@ -134,7 +130,7 @@ nav {
 }
 
 /*service */
-#service {
+.new {
     background: url('../images/service-bg.png') center/cover no-repeat;
     color: var(--mainWhite);
 }
