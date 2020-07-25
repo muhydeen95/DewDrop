@@ -132,6 +132,10 @@ nav {
 }
 
 /*service */
+.special {
+    background: var(--mainBlack);
+}
+
 .new {
     background: url('../images/service-bg.png') center/cover no-repeat;
     color: var(--mainWhite);
