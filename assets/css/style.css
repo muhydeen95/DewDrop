@@ -117,6 +117,7 @@ nav {
 #profile {
     background: url('../images/profile-bg.png') center/cover no-repeat;
     color: var(--mainWhite);
+    background-image: 80%;
 }
 
 #profile h2 {
@@ -125,8 +126,9 @@ nav {
 }
 
 #profile p {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: normal;
+    margin-top: 3rem;
 }
 
 /*service */
@@ -334,6 +336,11 @@ footer {
     .jumbotron h3 {
         font-size: 4rem;
     }
+
+    #profile p {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -357,6 +364,7 @@ footer {
     #profile p {
         font-size: 1.5rem;
         font-weight: normal;
+        margin-top: 1rem;
     }
 
     #project h2 {
@@ -409,6 +417,7 @@ footer {
     #profile p {
         font-size: 1.2rem;
         font-weight: normal;
+        margin-top: 0;
     }
 
     #service h2{
