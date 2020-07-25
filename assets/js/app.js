@@ -20,5 +20,16 @@ function toggleBtn() {
     }
 }
 
+function toggleButtton() {
+    if (navClose.classList.contains('d-none')) {
+        navClose.classList.remove('d-none');
+        navOpen.classList.add('d-none');
+    } else {
+        navClose.classList.add('d-none');
+        navOpen.classList.remove('d-none');
+    }
+}
+
 
 navOpen.addEventListener('click', toggleBtn);
+navClose.addEventListener('click', toggleButtton)
