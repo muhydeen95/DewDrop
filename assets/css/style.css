@@ -377,6 +377,10 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    .jumbotron {
+        padding: 7rem 0;
+    }
+
     .jumbotron h1 {
         font-size: 9rem;
     }
@@ -416,12 +420,13 @@ footer {
         -webkit-text-stroke-width: 0.5px;
         -webkit-text-stroke-color: white;
         font-size: 3rem;
+        padding: 5rem 0;
     }
     
     #profile p {
         font-size: 1.2rem;
         font-weight: normal;
-        margin-top: 0;
+        margin-top: 7rem;
     }
 
     #service h2{
@@ -463,7 +468,7 @@ footer {
     }
     
     #profile p {
-        font-size: .9rem;
+        font-size: 1rem;
         font-weight: normal;
     }
 
